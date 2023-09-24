@@ -304,7 +304,7 @@ let plantilla = `id: ${product.id} Producto: ${product.nombre} precio $ ${produc
     console.log(plantilla);
     console.log(packElegir);
 
-const packs = [
+const pack = [
     { id: 1, nombre: "pack premium", precio: 3000, },
     { id: 2, nombre: "pack gold", precio: 2000,  },
     { id: 3, nombre: "pack silver", precio: 1200, },
@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.title = "Carrito";
-const titulo = document.querySelector("h1 span"),
+const titulo1 = document.querySelector("h1 span"),
   tituloSecundario = document.querySelector("h2"),
   card = document.querySelector(".card");
 const btn = document.querySelector("#btn"),
@@ -376,8 +376,7 @@ function logSquare(num) {
   console.log(square(num));
 }
 
-// de aca para abajo
-
+//
 
 let productos = [];
 
@@ -424,7 +423,6 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar();
 }
 
-cargarProductos(productos);
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
@@ -470,9 +468,9 @@ function agregarAlCarrito(e) {
         text: "Producto agregado",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true, 
         style: {
           background: "linear-gradient(to right, #4b33a8, #785ce9)",
           borderRadius: "2rem",
@@ -480,10 +478,10 @@ function agregarAlCarrito(e) {
           fontSize: ".75rem"
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '1.5rem',
+            y: '1.5rem' 
           },
-        onClick: function(){} // Callback after click
+        onClick: function(){}
       }).showToast();
 
     const idBoton = e.currentTarget.id;
