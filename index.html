@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pack</title>
+    <!--Icon-->
+<link rel="shortcut icon" href="imagenes/netswire-favicon.webp" type="image/x-icon">
+<!--Libreria para footer-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Fuente-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+<!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!--Seo-->
+<meta name="title" content="Mi portfolio">
+<meta name="description" content="habilidades y proyectos personales">
+<meta name="keywords" content="Portfolio, Proyectos, Cv, Curriculum, Habilidades">
+<!--Enlaces-->
+<link rel="stylesheet" href="./paginas/aboutme.html">
+<link rel="stylesheet" href="./paginas/contacto.html">
+<link rel="stylesheet" href="./paginas/experience.html">
+<link rel="stylesheet" href="./paginas/portfolio.html">
+<link rel="stylesheet" href="prueba.html">
+<link rel="stylesheet" href="carrito.html">
+<!-- Estilos -->
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="barranav">
+<nav class="navbar navbar-expand-lg bg-light">
+<div class="container-fluid">
+<a class="navbar-brand" href="./paginas/login.html" >Log In </a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="./paginas/portfolio.html">Portfolio</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="./paginas/carrito.html"></a>
+    </li>  
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+    </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./paginas/experience.html">Experience</a></li>
+        <li><a class="dropdown-item" href="./paginas/aboutme.html">About Me</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="./paginas/contacto.html">Contacto</a></li>
+    </ul>
+</li>
+</ul>
+<form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+    </div>
+</div>
+</nav>
+</>
+<div>
+<div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Nico</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Elegi Tu Pack </h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> <a href="./paginas/productos.html"></a>Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="basic" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pack Basic</button>
+                    </li>
+                    <li>
+                        <button id="premium" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pack Premium</button>
+                    </li>
+                    <li>
+                        <button id="gold" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pack Gold</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© Derechos Reservados</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <img class="producto-imagen" src="imagenes/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg" alt="" height="200px" width="200px">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">Pack Basic</h3>
+                    <p class="producto-precio">$1000</p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+            </div>
+
+            <div id="contenedor-productos" class="contenedor-productos">
+                <img class="producto-imagen" src="imagenes/pankaj-patel-Fi-GJaLRGKc-unsplash.jpg" alt="" height="200px" width="200px">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">Pack Premium</h3>
+                    <p class="producto-precio">$2000</p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+            </div>
+
+            <div id="contenedor-productos" class="contenedor-productos">
+                <img class="producto-imagen" src="imagenes/programming-gc5ca95f2f_1280.png" alt="" height="200px" width="200px">
+                <div class="producto-detalles">
+                    <h3 class="producto-titulo">Pack Gold</h3>
+                    <p class="producto-precio">$3000</p>
+                    <button class="producto-agregar">Agregar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

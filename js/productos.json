@@ -1,0 +1,30 @@
+[
+    {
+        "id": "pack basic",
+        "titulo": "pack basic",
+        "categoria": {
+            "nombre": "pack",
+            "id": "basic"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pack premium",
+        "titulo": "pack premium",
+        "categoria": {
+            "nombre": "pack",
+            "id": "basic"
+        },
+        "precio": 2000
+    },
+    {
+        "id": "pack gold",
+        "titulo": "pack gold",
+        "categoria": {
+            "nombre": "pack",
+            "id": "gold"
+        },
+        "precio": 3000
+    },
+
+]
